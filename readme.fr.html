@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
 <head>
-<!-- $Id: readme.en.html 9581 2008-07-15 17:16:38Z karl $ -->
-<!-- Mise à jour française (df) -->
+<!-- $Id: readme.en.html 10234 2008-08-10 23:17:04Z karl $ -->
+<!-- Mise à jour française (df) 2008-08-11 -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>TeX Live</title>
 </head>
@@ -9,7 +12,6 @@
 <body> 
 
 <h2>Bienvenue sur le TeX Live </h2>
-
 
 <p>La distribution logicielle <strong>TeX Live</strong> propose un
 système TeX complet pour un large choix de plates-formes : Unix, MacOSX,
@@ -25,25 +27,34 @@ paquetages spécifiques.
 
 <p>La licence d'utilisation et de redistribution est contenue dans les
 fichiers 
-<a href="../LICENSE.TL"  LICENSE.TL</a> et
-<a href="../LICENSE.CTAN"> LICENSE.CTAN</a>.
+<a href="../LICENSE.TL">LICENSE.TL</a> et
+<a href="../LICENSE.CTAN">LICENSE.CTAN</a>.
 </p>
 
 <h3>Par où commencer ?</h3>
 
-<p>Nous vous suggérons d'imprimer et de lire le guide du TeX Live avant
-d'entreprendre toute installation.  Le guide vous fournira une description
+<p>Nous vous suggérons <em>d'imprimer et de lire le guide du TeX Live</em>
+avant d'entreprendre toute installation. Le guide vous fournira une description
 pas à pas de l'installation du système ainsi que l'information nécessaire à
 son utilisation.
 </p>
 
-<p>Des versions françaises du guide sont disponibles dans le répertoire
-texmf-doc/doc/french, aux formats 
-<a href="../texmf-doc/doc/french/texlive-fr/live.html"> html</a>
+<p>Des versions françaises du guide sont disponibles dans la distribution
+complète (sur le DVD par exemple), aux formats 
+<a href="../texmf-doc/doc/french/texlive-fr/texlive-fr.html">html</a>
   et 
-<a href="../texmf-doc/doc/french/texlive-fr/live.pdf">  pdf </a>.
+<a href="../texmf-doc/doc/french/texlive-fr/texlive-fr.pdf">pdf </a>.
 Des traductions dans d'autres langues sont également disponibles dans 
-<a "../texmf-doc/doc/">texmf-doc/doc/*</a>.
+<a href="../texmf-doc/doc/">../texmf-doc/doc/*</a>.
+</p>
+
+<p> Une liste de <a href="../doc.html">liens vers la documentation</a>
+(en format PDF et HTML) est fournie.
+</p>
+
+<p>Lors de l'installation par Internet, les liens indiqués ci-dessus
+ne fonctionnent pas ; dans ce cas, la documentation est accessible  
+<a href="http://tug.org/texlive/doc.html">ici</a>.
 </p>
 
 <p> Une liste des principaux changements intervenus depuis l'an dernier
@@ -52,48 +63,35 @@ est disponible à la fin des fichiers de documentation (HTML et PDF).
 
 <h3>Installation</h3>
 
-<p>Le script d'installation qui s'appelle maintenant <tt>install-tl</tt> est
-  disponible en deux versions, l'une fonctionne en mode graphique (mode par
-  défaut sous Windows) l'autre en mode texte (mode par défaut pour les autres
-  systèmes). Les options <tt>-gui</tt> (graphique) et <tt>-no-gui</tt> (texte)
-  permettent d'imposer l'un ou l'autre mode.
+<p>Le script d'installation, qui s'appelle maintenant <tt>install-tl</tt>
+  (ou <tt>install-tl.bat</tt> sous Windows), est disponible en deux versions,
+  l'une fonctionne en mode graphique (mode par défaut sous Windows) l'autre en
+  mode texte (mode par défaut pour les autres systèmes).
+  Les options <tt>-gui</tt> (graphique) et <tt>-no-gui</tt> (texte) permettent
+  d'imposer l'un ou l'autre mode.
+</p>
 
-</p>Les mises à jour et la personnalisation de l'installation sont confiées
-  depuis cette année au script <tt>tlmgr</tt> (TeX Live Package Manager) qui
-  lui aussi fonctionne en mode texte ou en mode graphique.
 <p>
+Les mises à jour et la personnalisation de l'installation sont confiées
+depuis cette année au script <tt>tlmgr</tt> (TeX Live Package Manager) qui
+lui aussi fonctionne en mode texte ou en mode graphique.
+</p>
 
-<h3>Documentation</h3>
+<p>L'aide en ligne pour l'utilisation de <tt>install-tl</tt>
+et de <tt>tlmgr</tt> s'obtient en ajoutant l'option <tt>--help</tt>
+à l'une ou l'autre de ces commandes.
+</p>
 
-    <p>La plus grande partie de la documentation peut être consultée en ligne,
-    avant toute installation. Pour y accéder de la manière la
-    plus pratique, vous aurez besoin d'un navigateur (tel que <a
-    href="http://www.mozilla.org/">Mozilla</a>
-    pour les documents HTML, et d'un lecteur PDF (tel que Acrobat Reader ou
-    <a href="http://tug.org/applications/gv/">gv</a> ou
-    <a href="http://www.foolabs.com/xpdf/">xpdf</a>) pour les documents PDF.
-    </p>
+<h3>Liens</h3>
 
-<ul>
-      <li><a href="../texmf-doc/doc/english/texlive-en/live.html">
-             <strong>Documentation TeX Live </strong></a> (html).
-     </li>
-
-      <li><a href="../doc.html">
-             Liens vers la documentation HTML et PDF</a>.
-      </li>
-
-      <li>FAQ TeX dans la distribution : 
-    <a href="../texmf-doc/doc/english/FAQ-en/newfaq.pdf">en anglais</a> (pdf),
-    <a href="../texmf-doc/doc/french/FAQ-fr/">en français</a>.
-     </li>
-</ul>
-
-<p>Autres pages de référence sur Internet, pour votre information. Elles ne
-   sont pas incluses sur le TeX Live.
+<p>Voici quelques liens vers d'autres pages de référence sur Internet.
+   Elles ne sont pas incluses dans la distribution TeX Live.
 </p>
 
 <ul>
+ <li><a  href="http://faqfctt.fr.eu.org/">FAQ de fr.comp.text.tex</a>
+      - une « Foire Aux Questions » en français.
+ </li>
  <li><a  href="http://tug.org/begin.html">http://tug.org/begin.html</a>
       - si vous êtes un nouvel utilisateur de TeX et si vous avez besoin
       de tutoriels.
@@ -103,7 +101,7 @@ est disponible à la fin des fichiers de documentation (HTML et PDF).
       systèmes, paquetages, polices, et plus encore.
  </li>
  <li><a href="http://tug.org/ctan.html">http://tug.org/ctan.html</a> - un point
-      d'entrée vers le <emph>Comprehensive TeX Archive Network</emph> (CTAN),
+      d'entrée vers le <em>Comprehensive TeX Archive Network</em> (CTAN),
       qui est un dépôt en ligne pour tout ce qui concerne TeX.
   </li>
   <li><a
@@ -115,9 +113,10 @@ est disponible à la fin des fichiers de documentation (HTML et PDF).
 
 <h3>Bienvenue dans le monde TeX !</h3>
 
-<hr><small>Page d'accueil TeX Live : 
-<a href="http://tug.org/tex-live/">http://tug.org/tex-live</a>.
-</small>
+<hr/>
+<p><small> 
+<a href="http://tug.org/tex-live/">Page d'accueil de TeX Live</a>.
+</small></p>
 
 </body>
 </html>
