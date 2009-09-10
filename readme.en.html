@@ -5,7 +5,7 @@
 <h2>Welcome to TeX Live</h2>
 
 <p>The <strong>TeX Live</strong> software distribution offers a complete
-TeX system for a variety of Unix, Macintosh, Windows and other
+TeX system for a variety of GNU and Unix, Macintosh, Windows and other
 platforms. It encompasses programs for editing, typesetting, previewing
 and printing of TeX documents in many different languages, and a large
 collection of TeX macros and font libraries.
@@ -26,12 +26,12 @@ description of the top-level directories, and more.
 
 <p>English versions of the Guide are in the full distribution (for
 example, on the DVD) in the <a
-href="../texmf-doc/doc/english">texmf-doc/doc/english/</a> hierarchy, in
+href="../texmf/doc/texlive/texlive-en">texmf/doc/texlive/</a> hierarchy, in
 both <a
-href="../texmf-doc/doc/english/texlive-en/texlive-en.html">html</a> and
-<a href="../texmf-doc/doc/english/texlive-en/texlive-en.pdf">pdf</a>
+href="../texmf/doc/texlive/texlive-en/texlive-en.html">html</a> and
+<a href="../texmf/doc/texlive/texlive-en/texlive-en.pdf">pdf</a>
 formats. Translations to other languages are also available under <a
-href="../texmf-doc/doc/">texmf-doc/doc/*</a>.
+href="../texmf/doc/texlive/">texmf/doc/texlive</a>.
 
 <p>We also provide a list of <a href="../doc.html">links to the
 available PDF and HTML documentation</a> for the included packages and
@@ -48,19 +48,34 @@ see the <i>Release history</i> section at the end of the documentation.
 
 <h3>Installation</h3>
 
-<p>The installation script is now named <tt>install-tl</tt> (that's
-<tt>install-tl.bat</tt> on Windows), and it has both GUI (default on
-Windows) and text (default on everything else) operation modes.  You can
-force one or the other with the options <tt>-gui</tt> and
-<tt>-no-gui</tt>, respectively.
+<p>The installation script is named <tt>install-tl</tt>
+(<tt>install-tl.bat</tt> on Windows), and it has three operation modes:
 
-<p>Post-installation package updates and other configurations are now
+<dl>
+<dt><b>wizard</b></dt> (default on Windows) which asks a bare minimum of questions
+and installs everything.  Can be specified explicitly with 
+<tt>install-tl&nbsp;--gui=wizard</tt>.<p>
+
+<dt><b>text</b></dt> (default on everything else) which has full customizatio
+options.  Can be specified explicitly with
+<tt>install-tl&nbsp;--gui=text</tt>.<p>
+
+<dt><b>perltk</b></dt> which is a GUI for text; especially useful for knowledgeable
+Windows users who don't want the defaults.  Can be specified explicitly with
+<tt>install-tl&nbsp;--gui=text</tt>, or by running
+<tt>install-tl-advanced.bat</tt> on Windows.
+
+</dl>
+
+<p>Post-installation package updates and other configurations are
 performed with the <tt>tlmgr</tt> (TeX Live Package Manager) script,
 which likewise has both GUI and text modes.
 
-<p>You can give the command-line option <tt>--help</tt> to both
-<tt>install-tl</tt> and <tt>tlmgr</tt> for an overview.  See the
-documentation links above for (much) more information.
+<p>You can give the command-line option <tt>--help</tt> to both <a
+href="http://tug.org/texlive/install-tl.html">install-tl</a> and <a
+href="http://tug.org/texlive/tlmgr.html">tlmgr</a> for detailed
+information on both programs.  See the documentation links above for
+(much) more information.
 
 
 <h3>Links</h3>
