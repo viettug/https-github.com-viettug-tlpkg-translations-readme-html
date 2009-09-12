@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//RU" "xhtml1-transitional.dtd">
+<!-- $Id: readme.en.html 15214 2009-09-10 19:00:53Z karl $ -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd--><meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
 <title>TeX Live</title></head> 
  
@@ -10,7 +11,7 @@
 <h2>Добро пожаловать в систему TeX Live</h2>
 
 <p>Дистрибутив <strong>TeX Live</strong> предлагает полную систему TeX
-для ряда платформ, включая варианты Юниксов, Макинтошей, Windows.  В
+для ряда платформ, включая варианты GNU, UNIX, MacOSX, Windows.  В
 него входят программы для редактирования, вёрстки, просмотра и печати
 документов в TeXе на многих языках, а также большая коллекция макросов
 и библиотек шрифтов.
@@ -32,11 +33,13 @@ Guide до начала установки.  Оно включат описание структуры директорий,
 
 <p>Английская версия руководства находится в полном дистрибутиве
 (например, на DVD) в директории <a
-href="../texmf-doc/doc/english">texmf-doc/doc/english/</a> в форматах <a
-<a href="../texmf-doc/doc/english/texlive-en/texlive-en.html">html</a>
-и <a href="../texmf-doc/doc/english/texlive-en/texlive-en.pdf">pdf</a>
-	Переводы на другие языки находятся в директориях <a
-	href="../texmf-doc/doc/">texmf-doc/doc/*</a>.
+href="../texmf/doc/texlive/texlive-en">texmf/doc/texlive/texlive-en</a> в форматах <a
+<a href="../texmf/doc/texlive/texlive-en/texlive-en.html">html</a>
+и <a href="../texmf/doc/texlive/texlive-en/texlive-en.pdf">pdf</a>
+Переводы на другие языки находятся в директориях <a
+href="../texmf/doc/texlive">texmf/doc/texlive</a>.  В
+частности, русский перевод находится в директории <a
+href="../texmf/doc/texlive/texlive-ru">texmf/doc/texlive/texlive-ru</a>. 
 
 <p>Мы также включили список <a href="../doc.html">ссылок на
 документацию в форматах PDF и HTML</a> к имеющимся пакетам и
@@ -51,15 +54,36 @@ href="http://tug.org/texlive/doc.html">документацию на сети</a>.
 
 <h3>Установка</h3>
 
-<p>Скрипт установки программы называется теперь <tt>install-tl</tt> и
-имеет как графческий режим (по умолчанию на windows), так и текстовый
-режим (по умолчанию на остальных платформах).  Вы можете вызвать тот
-или иной режим при помощи опций <tt>-gui</tt> и <tt>-no-gui</tt>
-соответственно.
+<p>Скрипт установки программы называется теперь <tt>install-tl</tt>
+(<tt>install-tl.bat</tt> под Windows) и работает в трех режимах:
+<dl>
+<dt><b>wizard</b></dt> (по умолчанию под Windows) задает минимум
+вопросов и устанавливает полную систему.  Может быть вызван командой 
+<tt>install-tl&nbsp;--gui=wizard</tt>.<p>
 
-<p>И программа <tt>install-tl</tt>, и программа <tt>tlmgr</tt> выводят
-краткую справку при вызове с опцией <tt>--help</tt>.  Ещё более 
-подробная информация доступна по ссылкам выше.
+<dt><b>text</b></dt> (по умолчанию на остальных платформах) позволяет
+указать, что именно устанавливать.  Может быть вызван командой
+<tt>install-tl&nbsp;--gui=text</tt>.<p>
+
+<dt><b>perltk</b></dt> Графический режим для опытных пользователей.
+Может быть особенно полезен для тех пользователей Windows, которым
+нужна тонкая настройка системы. Может быть вызван командой
+<tt>install-tl&nbsp;--gui=text</tt>, или, под Windows, командой
+<tt>install-tl-advanced.bat</tt>.
+
+</dl>
+
+<p>
+Действия после установки и настройка системы производятся программой
+<tt>tlmgr</tt> (TeX Live Package Manager), который также работает и в
+графическом, и в текстовом режимах.
+
+
+<p>И программа <a
+href="http://tug.org/texlive/install-tl.html">install-tl</a>, и
+программа <a href="http://tug.org/texlive/tlmgr.html">tlmgr</a>
+выводят справку о своей работе при вызове с опцией <tt>--help</tt>.
+Ещё более подробная информация доступна по ссылкам выше.
 
 
 <h3>Ссылки</h3>
