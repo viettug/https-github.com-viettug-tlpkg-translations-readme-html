@@ -6,7 +6,7 @@
 </HEAD>
 
 <center>
-<h1>TeX Live 2008 zaprasza</h1>
+<h1>TeX Live zaprasza</h1>
 </center>
 <b>TeX Live</b> oferuje pe³ny system TeX dla wielu odmian systemu Unix,
 MacOSX i&nbsp;Windows (w&nbsp;wersji 32-bitowej). Znajduj± siê tu programy 
@@ -32,7 +32,8 @@ Przed rozpoczêciem instalowania warto wydrukowaæ i przeczytaæ
 <i>Przewodnik po TeX Live</i>. Zawiera on informacje niezbêdne do 
 korzystania z&nbsp;dystrybucji i&nbsp;prawid³owej instalacji systemu TeX.  
 Wersje <i>Przewodnika</i> w&nbsp;kilku jêzykach dostêpne s± 
-w&nbsp;formatach HTML i&nbsp;PDF.</p>
+w&nbsp;formatach HTML i&nbsp;PDF w&nbsp; podkatalogach katalogu
+<a href="../texmf/doc/texlive/">texmf/doc/texlive/</a>.</p>
 
 <p>
 Uwaga: poni¿sze odno¶niki nie dzia³aj±, gdy instalujemy TeX Live 
@@ -42,46 +43,58 @@ w sieci: <a href="http://tug.org/texlive/doc.html">http://tug.org/texlive/doc.ht
 
 <b>Przewodnik po TeX Live</b> (polskie t³umaczenie):
 <ul>
-<li>PDF:  <a href="../texmf-doc/doc/polish/texlive-pl/texlive-pl.pdf">texlive-pl.pdf</a>
-<li>HTML: <a href="../texmf-doc/doc/polish/texlive-pl/texlive-pl.html">texlive-pl.html</a>
+<li>PDF:  <a href="../texmf/doc/texlive/texlive-pl/texlive-pl.pdf">texlive-pl.pdf</a>
+<li>HTML: <a href="../texmf/doc/texlive/texlive-pl/texlive-pl.html">texlive-pl.html</a>
 </ul>
 
 <b>The TeX Live Guide</b> (w jêzyku angielskim):
 <ul>
-<li>PDF:  <a href="../texmf-doc/doc/english/texlive-en/texlive-en.pdf">texlive-en.pdf</a>
-<li>HTML: <a href="../texmf-doc/doc/english/texlive-en/texlive-en.html">texlive-en.html</a>
+<li>PDF:  <a href="../texmf/doc/texlive/texlive-en/texlive-en.pdf">texlive-en.pdf</a>
+<li>HTML: <a href="../texmf/doc/texlive/texlive-en/texlive-en.html">texlive-en.html</a>
 </ul>
 
 <p>Lista najwa¿niejszych zmian znajduje siê na koñcu
 dokumentacji w rozdziale 
-<a href="../texmf-doc/doc/polish/texlive-pl/texlive-pl.html">,,Historia. Wydanie
+<a href="../texmf/doc/texlive/texlive-pl/texlive-pl.html">,,Historia. Wydanie
 obecne''.</a>
 
 <h2>Instalacja</h2>
 
 Programem instalacyjnym jest obecnie skrypt install-tl (install-tl.bat
-dla Windows), który posiada dwa tryby pracy: graficzny GUI (domy¶lny
-dla Windows) i&nbsp;tekstowy (domy¶lny dla innych systemów). Ka¿dy z tych
-trybów mo¿na wymusiæ podaj±c parametr wywo³ania -gui lub -no-gui.
+dla Windows), który posiada trzy tryby pracy:<p>
 
-Po zainstalowaniu proponujemy u¿ycie tlmgr (TeX Live Manager),
-który te¿ posiada analogiczne dwa tryby pracy i&nbsp;umo¿liwia dodawanie
-b±d¼ usuwanie pakietów, ich aktualizacjê z&nbsp;internetu i&nbsp;czynno¶ci
-konfiguracyjne.
+<p>"wizard" (domy¶lny dla Windows) graficzny GUI, który ma ograniczon±
+do minimum listê zapytañ i instaluje wszystkie pakiety. Odpowiada to
+uruchamieniu polecenia: <tt>install-tl&nbsp;--gui=wizard</tt>.</p>
+
+<p>tekstowy (domy¶lny dla innych systemów). Odpowiada to uruchamieniu 
+polecenia: <tt>install-tl&nbsp;--gui=text</tt>.</p>
+
+<p>perltk - graficzny tryb, szczególnie przydatny dla zaawansowanych 
+u¿ytkowników Windows, którzy chc± dokonaæ wyboru pakietów i ustawieñ. 
+Uruchamiany jest poleceniem: <tt>install-tl&nbsp;--gui=perltk</tt> (lub 
+w Windows poleceniem <tt>install-tl-advanced.bat</tt>).</p>
+
+<p>Po zainstalowaniu proponujemy u¿ycie tlmgr (TeX Live Manager),
+który posiada dwa tryby pracy (graficzny i&nbsp;tekstowy) i&nbsp;umo¿liwia 
+dodawanie b±d¼ usuwanie pakietów, ich aktualizacjê z&nbsp;internetu 
+i&nbsp;czynno¶ci konfiguracyjne.</p>
+
+<p>Zarówno <a href="http://tug.org/texlive/doc/install-tl.html">install-tl</a>, 
+jak i&nbsp;<a href="http://tug.org/texlive/tlmgr.html">tlmgr</a>
+mo¿na uruchomiæ z parametrem <tt>--help</tt>, aby wy¶wietliæ wszystkie 
+dostêpne opcje.
 
 <h2>Dokumentacje</h2>
 
 Wiêkszo¶æ dokumentacji na tej p³ytce mo¿e byæ przegl±dana bez konieczno¶ci
 uprzedniego instalowania systemu TeX. Zazwyczaj s± to pliki w formatach HTML
-i/lub PDF. Do czytania dokumentów HTML potrzebna jest odpowiednia
-przegl±darka -- np. Firefox lub Internet Explorer, za¶ w&nbsp;przypadku 
-PDF -- program Acrobat Reader, Ghostscript lub xpdf.
+i/lub PDF. 
 
 <ul>
-<li> <A href="../texmf-doc/doc/english/texlive-en/texlive-en.html">Oryginalna dokumentacja TeX Live</A>
 <li> <A href="../doc.html">Katalog dostêpnych na p³ytce
      dokumentacji w&nbsp;formatach PDF i&nbsp;HTML</A>
-<li> <A href="../texmf-doc/doc/english/FAQ-en/newfaq.pdf">TeX Frequently Asked
+<li> <A href="../texmf/doc/generic/FAQ-en/newfaq.pdf">TeX Frequently Asked
      Questions</A> (odpowiedzi na czêsto zadawane pytania)
 </ul>
 
@@ -103,17 +116,14 @@ Group</A> i&nbsp;lokalnych grup u¿ytkowników systemu TeX.
 
 P³ytka <b>TeX Live</b> zawiera wiêkszo¶æ dostêpnego polskiego oprogramowania
 TeX-owego i&nbsp;reprezentatywny wybór dokumentacji.
-<a href="../texmf-doc/doc/polish/tex-virtual-academy-pl/index.html">
+<a href="../texmf-dist/doc/generic/tex-virtual-academy-pl/index.html">
 Wirtualna Akademia TeX-owa</a>
 prowadzona w ramach polskiej Grupy U¿ytkowników Systemu TeX
 <A href="http://www.gust.org.pl">GUST</A>, przedstawia system TeX,
 a&nbsp;ponadto zawiera opisy wielu praktycznych makr i&nbsp;programów.
 Pocz±tkuj±cym polecamy szczególnie 
-<a href="../texmf-doc/doc/polish/tex-virtual-academy-pl/cototex.html">
+<a href="../texmf-dist/doc/generic/tex-virtual-academy-pl/cototex.html">
 ,,Przewodnik po systemie TeX''</a>.
-W&nbsp;formacie PDF przygotowano 
-<a href="../texmf-doc/doc/polish/guides-pl/index.html">Podrêczniki TeX-a 
-i&nbsp;LaTeX-a dla pocz±tkuj±cych</a> oraz inne przydatne dokumentacje.
 
 <p>
 P³ytka <b>TeX Live</b> zawiera ponadto gotowy do u¿ycia format MeX
@@ -126,7 +136,7 @@ oraz fonty przygotowane specjalnie do u¿ycia w&nbsp;polskojêzycznym TeX-u.
 
 <p>
 Dodatkowe programy, przydatne dla polskich u¿ytkowników, umieszczone zosta³y
-w&nbsp;katalogu <tt>support/polish/gustprog/</tt> (patrz
+w&nbsp;katalogu <tt>texmf-dist/doc/support/gustprog/</tt> (patrz
 README).
 Wybór przydatnych makr dla u¿ytkowników przede wszystkim formatu Plain/MeX
 oraz makra i&nbsp;style do tworzenia polskich skorowidzów
@@ -148,7 +158,7 @@ zainteresowaæ polskojêzycznych u¿ytkowników TeX-a.</p>
 Strona projektu TeX Live: <a href="http://tug.org/tex-live/">http://tug.org/tex-live</a>.
 
 <p>
-17 sierpnia 2008
+29 wrze¶nia 2009
 <hr>
 </BODY>
 </HTML>
