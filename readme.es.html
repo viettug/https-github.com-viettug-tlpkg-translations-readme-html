@@ -1,3 +1,4 @@
+
 <html><head><meta charset="UTF-8">
 <title>TeX Live</title>
 </head><body>
@@ -7,17 +8,16 @@
 <p>La distribución del programa <strong>TeX Live</strong> ofrece un
 sistema completo de TeX para una variedad de plataformas de GNU y
 Unix, Macintosh, Windows, entre muchas otras. La distribución abarca
-programas para editar, realizar composiciones tipográficas,
-pre-visualizar, e imprimir documentos TeX en muchos diferentes
-idiomas, y una larga colección de macros de TeX y librerías de
+programas para editar, para realizar composiciones tipográficas,
+para pre-visualizar, e imprimir documentos TeX en muchos diferentes
+idiomas, y cuenta con una inmensa colección de macros de TeX y librerías de
 fuentes. 
 
 <p>La distribución incluye documentación extensiva acerca de TeX, al
    igual que la documentación para los programas de los paquetes que
    están incluidos. 
 
-<p>Para información acerca de la licencia, por favor vea los archivos
-de texto 
+<p>Para más información acerca de la licencia, por favor vea los archivos
 <a href="../LICENSE.TL">LICENSE.TL</a> y <a
    href="../LICENSE.CTAN">LICENSE.CTAN</a> en el alto-nivel de la
    distribución. 
@@ -59,27 +59,17 @@ encuentra al final de este documento.
 
 <p>El programa (script) de instalación lleva el nombre
 <tt>install-tl</tt>
-<tt>install-tl-windows.bat</tt> en Windows, y tiene tres modos de
+<tt>install-tl-windows.bat</tt> en Windows, y tiene dos modos de
 operación:
 
-<dl> <dt><b>wizard</b></dt> (estándar en Windows) el cual pregunta un
-	mínimo número de preguntas e instala todo posteriormente. Su
-	instalación se puede especificar explícitamente con
-	<tt>install-tl&nbsp;--gui=wizard</tt>.<p>
+<dl> <dt><b>-gui</b></dt> (estándar en Windows y Macs) el cual  realiza una
+	instalación sencilla estándar, mediante el uso de una interfaz
+	gráfica, pero que no obstante permite muchs opciones avanzadas si se
+	necesitan.
 
-	<dt><b>text</b></dt> (estándar en todos los otros sistemas
-	operativos) el cual ofrece opciones para una personalización
-	completa. Su instalación se puede especificar explícitamente
-	con <tt>install-tl&nbsp;--gui=text</tt>.<p>
+	<dt><b>-no-gui</b></dt> (estándar en todos los otros sistemas
+	operativos) el cual provee todas las opciones que están disponibles, utilizando una interfaz gráfica simplificada de texto.
 
-	<dt><b>perltk</b></dt> el cual es un GUI (Interfaz Gráfica del
-	Usuario) para texto; especialmente útil para los usuarios con
-	el conocimiento de Windows, quienes no desean las
-	instalaciones estándar. La instalación puede ser especificada
-	explícitamente mediante el comando
-	<tt>install-tl&nbsp;--gui=perltk</tt>, o también mediante el
-	comando <tt>install-tl-advanced.bat</tt> en Windows. 
-</dt>
 
 <p>Las actualizaciones post-instalación de los paquetes, al igual que
 otras configuraciones son llevadas a cabo con el programa (script)
@@ -114,31 +104,3 @@ otras actividades de TeX.
 
 <hr><small><a href="http://tug.org/texlive">Página de TeX Live en el
 web.</a></small></body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
