@@ -1,101 +1,67 @@
-<html><head>
-<!-- $Id: readme.ja.html 15328 2010-05-29 00:29:36Z koji $ -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>TeX Live</title></head><body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TeX Live</title>
+</head>
 
-<h2>TeX Live へようこそ</h2>
+<body>
 
-<p>この <strong>TeX Live</strong> ソフトウェア頒布版は、各種 GNU その他
-UNIX・Macintosh・Windows などの各プラットフォームに対して、完備した
-TeX システムを提供するものです。これには、多くの言語において、TeX
-文書を編集・組版・プレビュー・印刷するための各プログラムと、TeX
-マクロとフォントライブラリの膨大なコレクションとが含まれています。</p>
+<h1 id="toc_0">TeX Live へようこそ</h1>
 
-<p>本頒布版には、TeX 一般の膨大な説明書の他に、同梱ソフトウェアパッケージの
-説明書も含まれています。</p>
+<p>TeX Live ディストリビューションは，GNU 系やその他 UNIX, macOS, Windows 等のプラットフォームを対象に，完全な TeX システムを提供するものです．これには，多くの言語の TeX 文書を編集，組版，プレビュー，印刷するためのプログラムと，たくさんの TeX マクロとフォントライブラリのコレクションとが含まれています．</p>
 
-<p>著作権に関する情報は、最上位階層にある平文ファイル <a
-href="../LICENSE.TL">LICENSE.TL</a> および <a
-href="../LICENSE.CTAN">LICENSE.CTAN</a> をご覧ください。</p>
+<p>このディストリビューションには，TeX 全般について解説する文書とともに，同梱する各ソフトウェアやパッケージのドキュメントも含まれています．</p>
 
+<p>ライセンスに関する情報は，トップレベルにあるテキストファイル <a href="../LICENSE.TL">LICENSE.TL</a> および <a href="../LICENSE.CTAN">LICENSE.CTAN</a> をご覧ください．</p>
 
-<h3>どこから手がけるか</h3>
+<h2 id="toc_1">はじめ方</h2>
 
-<p>導入を開始する前に、TeX Live の手引きを読まれることを強くお勧めします。
-そこには、手順を追った解説や、最上位ディレクトリの説明が書かれています。</p>
+<p>インストール作業を開始する前に TeX Live ガイドを読まれることを強くおすすめします．ガイドには TeX Live の基本的なディレクトリ構造やその他のしくみについて，詳細な説明が記載されています．</p>
 
-<p>手引きの日本語版は、（DVD などの）完全頒布版の <a
-href="../texmf-dist/doc/texlive/texlive-ja">texmf-dist/doc/texlive/</a> 階層にあり、<a
-href="../texmf-dist/doc/texlive/texlive-ja/texlive-ja.html">HTML</a> と <a 
-href="../texmf-dist/doc/texlive/texlive-ja/texlive-ja.pdf">PDF</a> の両方が
-あります。他の言語への翻訳も <a
-href="../texmf-dist/doc/texlive/">texmf-dist/doc/texlive</a> にあります。</p>
+<p>もし DVD イメージから TeX Live をインストールされている場合は，英語版ガイドと各言語への翻訳は <a href="../texlive-doc">texlive-doc</a> サブディレクトリに置かれています．<br>
+（残念ながら，2019年現在日本語版の TeX Live ガイドは存在しません．）</p>
 
-<p>同梱パッケージや同梱プログラムに関して、<a href="../doc.html">利用可能な
-PDF・HTML 版説明書へのリンク一覧</a> も提供しています。</p>
+<p>インストール後，英語版のガイドは <a href="../texmf-dist/doc/texlive/texlive-en">texmf-dist/doc/texlive/</a> 以下に <a href="../texmf-dist/doc/texlive/texlive-en/texlive-en.html">HTML</a> 形式と <a href="../texmf-dist/doc/texlive/texlive-en/texlive-en.pdf">PDF</a> 形式で配置されます．他の言語に翻訳されたバージョンも同じく <a href="../texmf-dist/doc/texlive/">texmf-dist/doc/texlive</a> 以下にあります．</p>
 
-<p>インターネットから導入を行う場合には、上記のリンクはつながりません。その場合には
-<a href="http://tug.org/texlive/doc.html">インターネット上の TeX Live
-説明書</a> をご覧ください。</p> 
+<p>すべての同梱パッケージ・プログラムのドキュメント (PDF, HTML) への<a href="../doc.html">リンク集</a>もぜひご活用ください．</p>
 
-<p>今年度リリースのもっとも重要な変更点の一覧については、上記説明書の文末にある
-<i>Release history</i> の節をご覧ください。</p>
+<p>インターネット経由でインストールを行う場合は，上述のリンクは利用できないため，<a href="https://tug.org/texlive/doc.html">オンライン版の TeX Live ドキュメント</a>をご参照ください．</p>
 
-<h3>導入</h3>
+<p>今年の TeX Live リリースの重要な変更点の一覧については，上記 TeX Live ドキュメントの末尾にある Release history 節をご覧ください．</p>
 
-<p>導入スクリプトの名称は、<tt>install-tl</tt>（Windows 上では
-<tt>install-tl.bat</tt>）となっており、以下の三つの動作モードがあります。
+<h2 id="toc_2">インストール</h2>
 
-<dl>
-<dt><b>wizard</b></dt>（Windows での既定値）は、最小限の質問のみを訊き、すべてを
-導入します。<tt>install-tl&nbsp;--gui=wizard</tt>
-とすれば、このモードを明示的に指定することができます。<p>
+<p>インストールプログラムは，install-tl（Windows 上では install-tl.bat）と呼ばれ，以下の2つの実行モードがあります：</p>
 
-<dt><b>text</b></dt>（他の全システムでの既定値）では、完全にカスタマイズを
-することができます。<tt>install-tl&nbsp;--gui=text</tt>
-とすれば、このモードを明示的に指定することができます。<p>
-
-<dt><b>perltk</b></dt> は、text モードに GUI
-を加えたものです。既定値を望まない、知識のある
-Windows ユーザーには特に有用です。<tt>install-tl&nbsp;--gui=perltk</tt>
-とすれば、このモードを明示的に指定することもできますが、Windows では
-<tt>install-tl-advanced.bat</tt>
-を実行することでもこのモードになります。</p>
-
-</dl>
-
-<p>導入後のパッケージ更新やその他設定は、同様に GUI とテキストモードを持つ
-<tt>tlmgr</tt>（TeX Live
-パッケージマネージャ）スクリプトで行うことができます。</p>
-
-<p><a
-href="http://tug.org/texlive/doc/install-tl.html">install-tl</a>
-および <a
-href="http://tug.org/texlive/tlmgr.html">tlmgr</a> 両プログラムの
-詳細な情報を得るには、コマンドラインオプション <tt>--help</tt>
-を与えてください。（もっと）詳しい情報については、上記の説明書へのリンクを
-ご覧ください。</p>
-
-<h3>リンク</h3>
-
-<p>最後に、ご参考までにいくつかの関連ウェブページを挙げておきます。これらは
-TeX Live には含まれていません。</p>
-
-<p><ul>
-<li><a href="http://tug.org/begin.html">http://tug.org/begin.html</a>
-    — あなたが TeX 初心者で、入門用の解説が欲しいときのために。</li>
-<li><a href="http://tug.org/interest.html">http://tug.org/interest.html</a>
-    — ウェブ上の、TeX に関する説明書・システム・パッケージ・フォントその他諸々の
-       資源一般の一覧</li>
-<li><a href="http://tug.org/ctan.html">http://tug.org/ctan.html</a>
-    — TeX 全般のオンラインレポジトリである Comprehensive TeX Archive
-       Network（CTAN）への入り口の一つ</li>
-<li><a href="http://tug.org/usergroups.html">http://tug.org/usergroups.html</a>
-    — 世界中の TeX ユーザーグループとその連絡先の一覧。お好きなユーザーグループに属して、
-       TeX Live と TeX のその他活動を支えられんことをつよくお勧めします。</li>
+<ul>
+<li><code>-gui</code> モード（Windows と macOS で規定）<br>
+デフォルトではシンプルなインストールをグラフィカルなインターフェースを利用して実行しますが，必要に応じてより高度なオプションを選択することもできます．</li>
+<li><code>-no-gui</code> モード（上記以外で規定）<br>
+よりシンプルなテキストベースのインターフェースで利用可能なすべてのオプションを提供します．</li>
 </ul>
 
-<h4>Happy TeXing!</h4>
+<p>インストール後のパッケージ更新やその他設定は，同じく GUI モードとテキストモードを持つ tlmgr（TeX Live パッケージマネージャ）プログラムで行うことができます．</p>
 
-<hr><small><a href="http://tug.org/texlive/">TeX Live ホームページ</a></small>
-</body></html>
+<p>install-tl および tlmgr の詳細情報はコマンドラインオプション <code>--help</code> を各プログラムに付けて実行してください．（さらに）詳しい情報については，上記のドキュメントへのリンクをご参照ください．</p>
+
+<h2 id="toc_3">リンク集</h2>
+
+<p>最後に，ご参考までにいくつかの関連ウェブサイトをリストアップしておきます．これらのドキュメントは TeX Live には含まれていません．</p>
+
+<ul>
+<li><a href="https://tug.org/begin.html">https://tug.org/begin.html</a>: TeX 初心者向けの，入門ドキュメント．</li>
+<li><a href="https://tug.org/interest.html">https://tug.org/interest.html</a>: インターネット上にある TeX に関連するリソース（ドキュメント・システム・パッケージ・フォント等）のリスト．</li>
+<li><a href="https://tug.org/ctan.html">https://tug.org/ctan.html</a>: TeX 界の最大のオンラインレポジトリ Comprehensive TeX Archive Network (CTAN)</li>
+<li><a href="https://tug.org/usergroups.html">https://tug.org/usergroups.html</a>: 世界中の TeX ユーザー会とその連絡先のリスト．お好きなユーザー会に入会して，TeX Live とその他の TeX 関連プロジェクトに参加いただければ幸いです．</li>
+</ul>
+
+<p>Happy TeXing!</p>
+
+<hr>
+
+<p><a href="https://tug.org/texlive/">TeX Live ホームページ</a></p>
+
+</body>
+
+</html>
