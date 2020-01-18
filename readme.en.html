@@ -1,5 +1,7 @@
 <html><head>
 <!-- $Id$ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TeX Live</title></head><body>
 
 <h2>Welcome to TeX Live</h2>
@@ -50,9 +52,16 @@ see the <i>Release history</i> section at the end of the documentation.
 
 <h3>Installation</h3>
 
-<p>The installation script is named <tt>install-tl</tt>
-(<tt>install-tl-windows.bat</tt> on Windows), and it has two operation
-modes:
+<p>The installation script is named <tt>install-tl</tt> and is at the
+top level of the directory tree. You can invoke it with <tt>perl
+install-tl</tt>. On Windows, you can also simply run the companion batch
+file, <tt>install-tl-windows.bat</tt>. You can invoke it with <tt>perl
+install-tl</tt>. On Macs, you will probably want to install via <a
+href="https://tug.org/mactex/">MacTeX</a>, which has its own native
+installer (it's also available on the DVD, next to the <tt>texlive/</tt>
+you're in now.)
+
+<p><tt>install-tl</tt> has two operation modes:
 
 <dl>
 <dt><b>-gui</b></dt> (default on Windows and Macs) which does a simple
