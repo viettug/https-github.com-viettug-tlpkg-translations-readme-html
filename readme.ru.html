@@ -1,6 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//RU" "xhtml1-transitional.dtd">
-<!-- $Id: readme.en.html 15214 2009-09-10 19:00:53Z karl $ -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><!--http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd--><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html><head>
+<!-- $Id: readme.en.html 53450 2020-01-18 22:26:17Z karl $ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TeX Live</title></head> 
  
  
@@ -59,8 +60,16 @@ href="https://tug.org/texlive/doc.html">документацию на сети</
 
 <h3>Установка</h3>
 
-<p>Скрипт установки программы называется <tt>install-tl</tt>
-(<tt>install-tl-windows.bat</tt> под Windows) и работает в двух режимах:
+<p>Скрипт установки программы называется <tt>install-tl</tt> и
+  находится в корневой папке.  Вы можете вызвать его командой <tt>perl
+  install-tl</tt>. Под Windows вы можете вместо этого просто
+  запустить <tt>install-tl-windows.bat</tt>. На Маках вы, скорее
+  всего, захотите
+  использовать <a href="https://tug.org/mactex/">MacTeX</a>, у
+  которого есть собственная программа установки (на DVD она тоже есть,
+  рядом с директорией <tt>texlive</tt>, где вы сейчас).
+
+<p><tt>install-tl</tt> работает в двух режимах:
 <dl>
 <dt><b>-gui</b></dt> (по умолчанию под Windows и Mac) по умолчанию
 проводит простую установку используя графический режим, но вместе с тем
