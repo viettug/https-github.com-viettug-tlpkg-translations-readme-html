@@ -1,11 +1,13 @@
-﻿<html><head>
+<html><head>
 <!-- $Id$ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TeX Live</title></head><body>
 
 <h2>TeX Live zaprasza</h2>
 
-<p><strong>TeX Live</strong> oferuje pełny system TeX-a dla wielu różnych systemów operacyjnych, Unix, Macintosh, Windows i wielu innych.
-Znajdziemy tu programy do składu tekstów, programy do przeglądania i drukowania dokumentów TeX-owych w wielu językach oraz bogate kolekcje makr i fontów.
+<p><strong>TeX Live</strong> oferuje pełną instalację systemu TeX-a dla różnych systemów operacyjnych: GNU/Unix, Macintosh, Windows i wielu innych. 
+Znajdziemy tu programy do edycji, składu,  przeglądania i drukowania dokumentów TeX-owych w wielu językach oraz bogate kolekcje makr i fontów.
 
 <p>Dystrybucja zawiera  obszerną dokumentację  TeX-a, a także dokumentacje  towarzyszące poszczególnym pakietom oprogramowania. 
 
@@ -15,7 +17,7 @@ href="../LICENSE.CTAN">LICENSE.CTAN</a>.
 
 <h3>Od czego zacząć</h3>
 
-<p>Przed rozpoczęciem instalacji zalecamy wydrukować i przeczytać <i>Przewodnik po TeX Live</i>. Prowadzi on krok po kroku przez instalację, znajdziemy tam opis głównego drzewa katalogów i dużo więcej.
+<p>Przed rozpoczęciem instalacji zalecamy wydrukować i przeczytać <i>Przewodnik po TeX Live</i>. Poprowadzi on nas krok po kroku przez instalację, znajdziemy tam też opis głównego drzewa katalogów i dużo więcej.
 
 <p>Gdy instalujemy z płytki DVD, wersje <i>Przewodnika</i> w kilku językach dostępne są w podkatalogu 
 <a href="../texlive-doc"> texlive-doc</a>.
@@ -23,25 +25,27 @@ href="../LICENSE.CTAN">LICENSE.CTAN</a>.
 
 <p>Po zainstalowaniu  systemu, <i>Przewodnik</i> w języku angielskim w formacie <a
 href="../texmf-dist/doc/texlive/texlive-en/texlive-en.html">html</a> i  <a href="../texmf-dist/doc/texlive/texlive-en/texlive-en.pdf">pdf</a> znajdziemy w <a
-href="../texmf-dist/doc/texlive/texlive-en">texmf-dist/doc/texlive/</a>. Tam też są dostępne inne wersje językowe <i>Przewodnika</i>, w tym polska.
- 
+href="../texmf-dist/doc/texlive/texlive-en">texmf-dist/doc/texlive/</a>.  Inne wersje językowe <i>Przewodnika</i>, w tym polska dostępne są także w 
+<a
+href="../texmf-dist/doc/texlive/texlive-en">texmf-dist/doc/texlive/</a>.
 
 <p>Dołączyliśmy również listę odnośników do 
-  <a href="../doc.html"> dokumentacji HTML and PDF</a>  programów i pakietów zawartych w  instalacji.
+  <a href="../doc.html"> dokumentacji w formatach HTML i PDF</a>  programów i pakietów zawartych w  instalacji.
 	
 <p>Jeśli instalujemy TeX Live z internetu, powyższe odnośniki nie działają. W tym przypadku należy sięgnąć do dokumentacji tutaj:
 <a
-href="https://tug.org/texlive/doc.html">TeX Live documentation on the
-Internet</a>.
+href="https://tug.org/texlive/doc.html">dokumentacja TeX Live w internecie</a>.
 
-<p>Lista najważniejszych zmian w bieżącej edycji znajduje się na końcu dokumentacji w rozdziale
- <i>Historia</i>.  
+<p>Lista najważniejszych zmian w bieżącej edycji znajduje się na końcu dokumentacji w rozdziale <i>Historia</i>.  
 
 <h3>Instalacja</h3>
 
 <p>Skrypt instalacyjny nazywa się <tt>install-tl</tt>
-(<tt>install-tl-windows.bat</tt> dla Windows) i ma dwa tryby pracy:
+ i umieszczony jest na najwyższym poziomie drzewa katalogów. Można go uruchomić poleceniem <tt>perl instal-tl</tt>. W systemie Windows można uruchomić dołączony skrypt <tt>install-tl-windows.bat</tt>. Dla Macs
+najlepiej instalować przez  <a href="https://tug.org/mactex/">MacTeX</a>
+który ma  własny instalator (dostępny teraz również na płytce DVD obok <tt>texlive/</tt>).
 
+<p><tt>install-tl</tt> ma dwa tryby:
 <dl>
 <dt><b>-gui</b></dt> (domyślny dla Windows i Macs), który używając interfejsu graficznego, bez zbędnych zapytań instaluje cały system, ale pozwala również na wybranie instalacji zaawansowanej. <p>  
 
