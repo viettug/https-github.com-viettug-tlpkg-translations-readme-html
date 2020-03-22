@@ -1,6 +1,8 @@
 <html><head>
+<!-- $Id$ -->
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-<!-- $Id: readme.en.html 33806 2014-05-02 23:30:00Z karl $ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TeX Live</title></head><body>
 
 <h2>Bem-vindo ao TeX Live</h2>
@@ -40,26 +42,31 @@ veja a seção <i>Histórico de Lançamentos</i> no final da documentação.
 
 </p><h3>Instalação</h3>
 
-<p>O script de instalação chama-se <tt>install-tl</tt>
-(<tt>install-tl-windows.bat</tt> no Windows), e possui dois modos de operação:
+<p> O programa de instalação (script) é nomeado
+<tt> install-tl </tt> e está no nível superior da árvore de diretórios. Você pode invocá-lo com <tt> perlinstall-tl </tt>.
 
-</p><dl>
-<dt><b>-gui</b></dt> (padrão no Windows e no Mac) que dispara uma instalação
-simplificada por padrão, mas também permite opções avançadas.<p>
+No Windows, você pode executar o arquivo em lote anexado (<tt> install-tl-windows.bat </tt>. Nos Macs, provavelmente é melhor instalá-lo via <a href = "https://tug.org/ mactex / "> MacTeX </a>, que possui seu próprio instalador nativo (também está no DVD, ao lado de <tt> texlive </tt> em que você está agora).
 
-</p><dt><b>-no-gui</b></dt> (padrão nos demais) que possui todas as opções
-disponíveis, usando uma interface textual simplificada.<p>
+<p> <tt> install-tl </tt> tem dois modos de operação: </p>
 
-</dl>
+<dl> <dt> <b> -gui </b> </dt> (padrão no Windows e Macs) que executa um
+Instalação padrão simples, usando uma interface
+gráfica, mas que, no entanto, permite muitas opções avançadas, se necessário.
 
-<p>Atualização de pacotes após a instalação e outras configurações são 
-realizadas com o script <tt>tlmgr</tt> (TeX Live Package Manager),
-que também possui ambos os modos GUI e text.
+<dt> <b> -no-gui </b> </dt> (padrão em todos os outros sistemas
+operacional), que fornece todas as opções disponíveis, usando uma interface de texto gráfica simplificada.
 
-</p><p>Você pode usar a linha de comando com a opção <tt>--help</tt> para <a href="http://tug.org/texlive/doc/install-tl.html">install-tl</a> e <a href="http://tug.org/texlive/tlmgr.html">tlmgr</a> 
-para informações detalhadas sobre ambos os programas. Veja a documentação nos links acima para 
-(muito) mais informações.
+<p> Atualizações de pacotes pós-instalação, assim como
+outras configurações são realizadas com o programa (script)
+<tt> tlmgr </tt> (TeX Live Package Manager), que também opera em ambos
+modos: texto e GUI.
 
+<p> Você pode executar a opção <tt> --help </tt> na linha
+comando para ambos: <a
+href = "http://tug.org/texlive/doc/install-tl.html"> install-tl </a>
+e <a href="http://tug.org/texlive/tlmgr.html"> tlmgr </a> que fornece
+Informações mais detalhadas sobre esses programas. Veja os links
+da documentação acima para (muito) mais informações.
 
 </p><h3>Links</h3>
 
