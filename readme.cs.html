@@ -5,10 +5,10 @@
 
 <h2>Vítejte v TeX Live</h2>
 
-Softwarová distribuce <strong>TeX Live</strong> nabízí kompletní TeXový systém pro řadu
-platforem - GNU a UNIX, Macintosh, Windows a další. Zahrnuje programy
-pro editování, sazbu, zobrazení a tisk TeXových dokumentů v mnoha
-různých jazycích a rozsáhlou kolekci TeXových maker a fontů.
+Softwarová distribuce <strong>TeX Live</strong> nabízí kompletní TeXový systém
+pro řadu platforem - GNU a UNIX, Macintosh, Windows a další. Zahrnuje programy
+pro editování, sazbu, zobrazení a tisk TeXových dokumentů v mnoha různých
+jazycích a rozsáhlou kolekci TeXových maker a fontů.
 
 <p>Distribuce zahrnuje obsáhlou dokumentaci o TeXu obecně, stejně jako
 dokumentaci k zahrnutým softwarovým balíkům.
@@ -26,16 +26,21 @@ adresářů a další informace.
 <p>Pokud instalujete z DVD, anglické i další jazykové verze instalačních
 průvodců jsou umístěny v podadresáři <a href="../texlive-doc">texlive-doc</a>.
 
-<p>Po instalaci, anglické verze Průvodce instalací najdete 
-v adresářové struktuře <a href="../texmf-dist/doc/texlive/texlive-en">texmf-dist/doc/texlive</a> ve formátech <a href="../texmf-dist/doc/texlive/texlive-en/texlive-en.html">html</a> a <a href="../texmf-dist/doc/texlive/texlive-en/texlive-en.pdf">pdf</a>. Překlady
-do dalších jazyků jsou také dostupné v podstromu <a href="../texmf-dist/doc/texlive/">texmf-dist/doc/texlive</a>.
+<p>Po instalaci, anglické verze Průvodce instalací najdete v adresářové
+struktuře <a
+href="../texmf-dist/doc/texlive/texlive-en">texmf-dist/doc/texlive</a> ve
+formátech <a
+href="../texmf-dist/doc/texlive/texlive-en/texlive-en.html">html</a> a <a
+href="../texmf-dist/doc/texlive/texlive-en/texlive-en.pdf">pdf</a>. Překlady do
+dalších jazyků jsou také dostupné v podstromu <a
+href="../texmf-dist/doc/texlive/">texmf-dist/doc/texlive</a>.
 
-<p>Nabízíme také <a href="../doc.html">seznam odkazů na dostupnou dokumentaci k zahrnutým
-balíkům a programům</a>, opět ve formátech HTML a PDF.
+<p>Nabízíme také <a href="../doc.html">seznam odkazů na dostupnou dokumentaci k
+	zahrnutým balíkům a programům</a>, opět ve formátech HTML a PDF.
 
-<p>Pokud instalujete z internetu, výše zmíněné odkazy vám nebudou fungovat.
-V tom případě si ale můžete <a href="http://tug.org/texlive/doc.html">dokumentaci TeX Live prohlížet
-na internetu.</a>
+<p>Pokud instalujete z internetu, výše zmíněné odkazy vám nebudou fungovat.  V
+tom případě si ale můžete <a href="http://tug.org/texlive/doc.html">dokumentaci
+TeX Live prohlížet na internetu.</a>
 
 <p>Seznam nejdůležitějších změn v letošním vydání najdete v oddílu
 Historie verzí na konci dokumentace.
@@ -43,22 +48,35 @@ Historie verzí na konci dokumentace.
 
 <h3>Instalace</h3>
 
-<p> Instalační program (skript) se jmenuje <tt> install-tl </tt> a je na nejvyšší úrovni stromu adresářů. Můžete to vyvolat pomocí <tt> perlinstall-tl </tt>.
+<p> Instalační program (skript) se jmenuje <tt> install-tl </tt> a je na
+nejvyšší úrovni stromu adresářů. Můžete to vyvolat pomocí <tt> perlinstall-tl
+</tt>.
 
-V systému Windows můžete spustit připojený dávkový soubor (<tt> install-tl-windows.bat </tt>. V počítačích Mac je pravděpodobně nejlepší jej nainstalovat pomocí <a href = "https://tug.org/ mactex / "> MacTeX </a>, který má svůj vlastní nativní instalační program (je také na DVD, vedle <tt> texlive </tt>, ve kterém se právě nacházíte).
+V systému Windows můžete spustit připojený dávkový soubor (<tt>
+	install-tl-windows.bat </tt>. V počítačích Mac je pravděpodobně
+nejlepší jej nainstalovat pomocí <a href = "https://tug.org/ mactex / "> MacTeX
+</a>, který má svůj vlastní nativní instalační program (je také na DVD, vedle
+<tt> texlive </tt>, ve kterém se právě nacházíte).
 
 <p> <tt> install-tl </tt> má dva režimy provozu: </p>
 
-<dl> <dt> <b> -gui </b> </dt> (standard ve Windows a Mac), který provádí jednoduchou standardní instalaci pomocí grafického rozhraní, ale přesto umožňuje mnoho pokročilých možností v případě potřeby.
+<dl> <dt> <b> -gui </b> </dt> (standard ve Windows a Mac), který provádí
+	jednoduchou standardní instalaci pomocí grafického rozhraní, ale přesto
+	umožňuje mnoho pokročilých možností v případě potřeby.
 
-<dt> <b> -no-gui </b> </dt> (standard ve všech ostatních operačních systémech), který poskytuje všechny dostupné možnosti pomocí zjednodušeného grafického textového rozhraní.
+<dt> <b> -no-gui </b> </dt> (standard ve všech ostatních operačních systémech),
+který poskytuje všechny dostupné možnosti pomocí zjednodušeného grafického
+textového rozhraní.
 
-<p> Aktualizace balíků po instalaci, stejně jako jiné konfigurace, jsou prováděny programem (skript)
-<tt> tlmgr </tt> (TeX Live Package Manager), který také pracuje v obou režimech: text a GUI.
+<p> Aktualizace balíků po instalaci, stejně jako jiné konfigurace, jsou
+prováděny programem (skript) <tt> tlmgr </tt> (TeX Live Package Manager), který
+také pracuje v obou režimech: text a GUI.
 
-<p> Na příkazovém řádku můžete spustit možnost <tt> --help </tt> pro <a href="http://tug.org/texlive/doc/install-tl.html"> install-tl </a>
-a <a href="http://tug.org/texlive/tlmgr.html"> tlmgr </a> poskytované uživatelem
-Podrobnější informace o těchto programech. Další informace naleznete v odkazech na dokumentaci výše.
+<p> Na příkazovém řádku můžete spustit možnost <tt> --help </tt> pro <a
+	href="http://tug.org/texlive/doc/install-tl.html"> install-tl </a> a <a
+	href="http://tug.org/texlive/tlmgr.html"> tlmgr </a> poskytované
+uživatelem Podrobnější informace o těchto programech. Další informace naleznete
+v odkazech na dokumentaci výše.
 
 <h3>Odkazy</h3>
 
@@ -84,5 +102,5 @@ href="http://tug.org/usergroups.html">http://tug.org/usergroups.html</a>
 
 <h4>Příjemné TeXování!</h4>
 
-<hr><small><a href="http://tug.org/texlive/">Domovská stránka TeX Live.</a></small>
-</body></html>
+<hr><small><a href="http://tug.org/texlive/">Domovská stránka TeX
+		Live.</a></small> </body></html>
