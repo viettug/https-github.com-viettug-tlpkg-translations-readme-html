@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>TeX Live</title>
 	<meta name="author" content="Jiang Jiang" />
 </head>
@@ -35,7 +36,9 @@
 
 <h3>安装</h3>
 
-<p>安装脚本现在被改名为 <code>install-tl</code> 了 (Windows 下是 <code>install-tl-windows.bat</code>)，它有两种运行模式：</p>
+<p>安装脚本叫 <code>install-tl</code>，它在目录树的顶层。你可以通过 <tt>perl install-tl</tt> 来调用它。在 Windows 下，你可以运行在它旁边的批处理文件：<tt>install-tl-windows.bat</tt>。在 Mac 上，你可能会希望从 <a href="https://tug.org/mactex/">MacTeX</a> 安装，它有自己的安装程序 (也在 DVD 里包括，就在你现在浏览的 <tt>texlive/</tt> 目录旁边)。</p>
+
+<p><tt>install-tl</tt> 有两种运行模式：</p>
 
 <dl>
 <dt><strong>-gui</strong></dt>
